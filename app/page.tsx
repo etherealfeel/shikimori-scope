@@ -9,9 +9,7 @@ const Home = async () => {
                 Explore Anime World
             </h1>
             <div className="grid place-items-center lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12">
-                {data.map((item: AnimeProp) => (
-                    <AnimeCard key={item.id} anime={item} />
-                ))}
+                {data}
             </div>
         </section>
     );
