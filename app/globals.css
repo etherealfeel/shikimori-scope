@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    background: url('/assets/images/bg.jpg') center/cover no-repeat;
+    background: url('/assets/images/bg.jpg') center repeat;
 }
 
 .app {

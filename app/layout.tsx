@@ -21,7 +21,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
                     <hr className="h-px bg-black border-0 dark:bg-black" />
 
                     {children}
-                    {/* <InfiniteScroll /> */}
+                    <InfiniteScroll />
                     <Footer />
                 </main>
             </body>

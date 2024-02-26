@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="sm:px-16 py-4 px-10 flex justify-between items-center gap-2 flex-wrap rounded-lg bg-[#0f0c12]">
             <div className="flex items-center gap-5">
                 <p className="text-base font-bold text-gray-300">
-                    @2024 Shikimori Scope
+                    &copy; 2024 Shikimori Scope
                 </p>
                 <Image
                     src="assets/icons/logo.svg"
@@ -16,7 +16,6 @@ const Footer = () => {
                     className="object-contain"
                 />
             </div>
-
             <div className="flex items-center gap-6">
                 <Link href="https://www.tiktok.com/" target="_blank">
                     <Image

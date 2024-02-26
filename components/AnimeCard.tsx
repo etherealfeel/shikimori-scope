@@ -53,7 +53,7 @@ const AnimeCard = ({ anime, index }: Prop) => {
             <div className="py-2 px-4 rounded-b-lg bg-[#0f0c12]">
                 <div className="py-4 flex flex-col gap-3">
                     <div className="flex justify-between items-center gap-1">
-                        <h2 className="font-bold text-white text-xl line-clamp-1 w-full">
+                        <h2 className="font-bold text-white text-md line-clamp-1 w-full">
                             {anime.name}
                         </h2>
                         <div className="py-1 px-2 bg-white rounded-sm">
