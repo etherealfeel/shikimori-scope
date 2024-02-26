@@ -1,5 +1,5 @@
 import React from 'react';
-import AnimeCard, { AnimeProp } from '@/components/AnimeCard';
+import AnimeCard, { AnimeProp } from '@components/AnimeCard';
 import { fetchAnime } from './action';
 const Home = async () => {
     const data = await fetchAnime(1);
@@ -13,7 +13,7 @@ const Home = async () => {
                     <AnimeCard key={item.id} anime={item} />
                 ))}
             </div>
-        </section>  
+        </section>
     );
 };
 
