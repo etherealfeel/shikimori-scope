@@ -10,15 +10,12 @@ body {
     min-height: 100vh;
 }
 
-.red-gradient {
-    background: linear-gradient(92deg, #ff5956 2.87%, #ee1e38 96.18%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 :root {
     color-scheme: dark;
+}
+
+.cyan-gradient {
+    @apply bg-gradient-to-r from-green-800 to-cyan-500 bg-clip-text text-transparent;
 }
 
 .glassy {

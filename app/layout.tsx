@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import { Open_Sans } from 'next/font/google';
 import './globals.css';
 import InfiniteScroll from '@components/InfiniteScroll';
+import Hero from '@components/Hero';
+import Footer from '@components/Footer';
 const openSans = Open_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -15,8 +17,12 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <html lang="en">
             <body className={openSans.className}>
                 <main className="max-w-7xl mx-auto glassy">
+                    <Hero />
+                    <hr className="h-px bg-black border-0 dark:bg-black" />
+
                     {children}
                     <InfiniteScroll />
+                    <Footer />
                 </main>
             </body>
         </html>
