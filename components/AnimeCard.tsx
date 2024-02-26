@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 export interface AnimeProp {
     id: string;
-    title: string;
+    name: string;
     image: {
         original: string;
     };
-    category: string;
+    kind: string;
     episodes: number;
     episodes_aired: number;
     score: string;
@@ -22,8 +22,8 @@ const AnimeCard = ({ anime }: Prop) => {
         <div className="max-w-sm rounded relative w-full">
             <div className="relative w-full sm:h-[30vh] h-[45vh]">
                 <Image
-                    src={anime.image.original}
-                    alt={anime.title}
+                    src={`https://shikimori.one${anime.image.original}`}
+                    alt={anime.name}
                     fill
                     className="rounded-t-lg"
                 />
@@ -32,11 +32,11 @@ const AnimeCard = ({ anime }: Prop) => {
                 <div className="py-4 flex flex-col gap-3">
                     <div className="flex justify-between items-center gap-1">
                         <h2 className="font-bold text-white text-xl line-clamp-1 w-full">
-                            {anime.title}
+                            {anime.name}
                         </h2>
                         <div className="py-1 px-2 bg-white rounded-sm">
                             <p className="text-[#0f0c12] text-sm font-bold capitalize">
-                                {anime.category}
+                                {anime.kind}
                             </p>
                         </div>
                     </div>

@@ -4,7 +4,7 @@ import './globals.css';
 const openSans = Open_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: 'Shikimori Scope',
+    name: 'Shikimori Scope',
     description:
         'Explore the world of anime with Shikimori Scope, your gateway to the vast universe of Japanese animation.',
 };
